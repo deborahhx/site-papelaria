@@ -10,28 +10,45 @@
 <section class="conteudo">
 <div class="img">
     <img src="images/oie_transparent.png" alt="" class="avatar">
-    </div>
 </div>
 <h3>Entrar</h3>
-<form name="form"action="" method="post">
-<input type="email" placeholder="E-mail" name="email">
-<input type="password" placeholder="Senha" name="senha">
-<input type="submit"value="ENTRAR" onclick="verificar()">
-<p>Não tem uma conta?<a href="cadastro.html">Crie agora!</a></p>
-
+<form name="form" action="javascript:void(0);" method="post" onsubmit="verificar()">
+    <input type="email" placeholder="E-mail" name="email" id="email" required>
+    <input type="password" placeholder="Senha" name="senha" id="senha" required>
+    <input type="submit" value="ENTRAR">
+    <p>Não tem uma conta? <a href="cadastro.html">Crie agora!</a></p>
 </form>
-    </section>
-    <script>
-        function verificar(){
-            if (form.email.value=="" || form.senha.value==""){
-                alert("Preencha todos os campos!")
-                document.form.email.focus();
-            }else if(form.email.value=="deborahhwr@gmail.com" || form.senha.value=="123"){
-              window.location.href="areaCliente.html";
-            }else{
-                alert("Usuário Inválido!")
-            }
+</section>
+<script>
+    async function verificar() {
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('senha').value;
+
+        if (!email || !password) {
+            alert("Preencha todos os campos!");
+            return;
         }
-    </script>
+
+        try {
+            const response = await fetch('http://localhost:3000/auth/login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ email, password })
+            });
+
+            if (response.ok) {
+                const result = await response.json();
+                window.location.href = "areaCliente.html";
+            } else {
+                alert("Usuário inválido!");
+            }
+        } catch (error) {
+            console.error("Erro:", error);
+            alert("Erro ao tentar autenticar. Tente novamente mais tarde.");
+        }
+    }
+</script>
 </body>
 </html>
