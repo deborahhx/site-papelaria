@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petit Papeterie</title>
+    <link rel="stylesheet" type="text/css" href="css/fontawesome-all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <style>
+        .area{
+            margin: 30px;
+            margin-top: 50px;
+        }
+        .principal{
+            display: inline-flex;
+        }
+        .dados{
+            background: #f86fda;
+            padding: 50px;
+            margin-top: 40px;
+        }
+        .dados h1{
+            font-size: 25px;
+            color:#fff;
+        }
+        .dados ul li {
+         margin-top: 20px;
+         margin-bottom: 20px;
+         font-size: 20px;
+         color: #fff;
+        }
+        .fas{
+            margin-right: 8px;
+        }
+        .far{
+            margin-right: 8px;
+        }
+        .dados ul li {
+            text-decoration: none;
+            list-style-type: none;
+        }
+        .carrinho{
+            width: 1010px;
+            background: rgb(240, 240, 240);
+            margin-left: 20px;
+            margin-top: 40px;
+            padding: 10px;
+        }
+        .carrinho h1{
+          color:#f86fda;
+          font-size: 25px;
+        }
+        .carrinho p {
+          margin-top: 50px;
+          text-align: center;
+        }
+       
+    </style>
+</head>
+<body>
+    <header class="header fixed">
+        <div class="content">
+          <div class="logo fl-left">
+            <a href="index.html">
+              <img src="images/logopetit.png" alt="logo" width="120px">
+            </a>
+          <a href="#"class="nav-toggle fl-right">
+            <i class="fas fa-bars"></i> MENU
+          </a>
+          <nav class="nav active"> <!-----AREA DE NAVEGACAO----->
+            <p class="text-right">
+              <span class="nav-close"><!-----ELEMENTO EM LINHA----->
+                <i class="fas fa-times"></i></span>
+            </p>
+            <ul>
+              <li><i class="fas fa-home"></i><a href="#sobre">SOBRE</a></li>
+              <li><i class="fas fa-cart-plus"></i><a href="areaCliente.html">CARRINHO</a></li>
+              <li><i class="far fa-user-circle"></i><a href="areaCliente.html">MINHA CONTA</a></li>
+            </ul>
+          </nav>
+        </div><!--fim logo-->
+        </div><!--fim content-->
+      </header> <!--FIM DO HEADER-->
+      <section class="section">
+        <div class="search-box">
+          <header>
+            <p class="tagline">PESQUISE PRODUTOS DA LOJA</p>
+          </header>
+          <form name="formSearch" method="post" action="">
+            <input type="search" name="busca" id="busca">
+            <button type="submit"><i class="fas fa-search"></i></button>
+          </form>
+        </div><!--fim search-->
+        <div class="estatisticas">
+          <div class="estatisticas-item">
+            <span>Cadernos</span>
+          
+          </div>
+          <div class="estatisticas-item">
+            <span>Canetas</span>
+          
+          </div>
+          <div class="estatisticas-item">
+            <span>Planners</span>
+            
+          </div>
+          <div class="estatisticas-item">
+            <span>Marcadores</span>
+           
+          </div>
+          <div class="estatisticas-item">
+            <span>Estojos</span>
+           
+          </div>
+          <div class="estatisticas-item">
+            <span>Réguas</span>
+           
+          </div>
+         </div>
+    
+      </section>
+
+
+      <section class="area">
+          <div class="principal">
+          <div class="dados">
+              <nav>
+                  <h1>Minha Conta</h1>
+                  <ul>
+                      <li><i class="fas fa-cart-plus"></i><a href="areaCliente.html">Meu Carrinho</a></li>
+                      <li><i class="fas fa-archive"></i><a href="pedidos.html">Meus Pedidos</a></li>
+                      <li><i class="fas fa-archive"></i><a href="orçamento.html">Orçamento</a></li>
+                      <li><i class="fas fa-archive"></i><a href="troca.html">Solicitar Troca</a></li>
+                      <li><i class="far fa-user-circle"></i><a href="cadastroeditar.html">Cadastro</a></li>
+                  </ul>
+              </nav>
+          </div>
+          <div class="carrinho">
+                <h1 class="titulo">Meu Carrinho</h1>
+                <hr>
+                <p>Nenhum produto Adicionado.</p>
+          </div>
+      
+      </section>
+
+      <footer class="footer" id="sobre">
+        <div class="content">
+          <div class="footer-col">
+            <h1>Sobre a Empresa</h1> 
+            <P>Petit Papeterie é uma Papelaria Moderna, especializada em materias tecnicos e artisticos, oferecendo ampla linha de escritorio e escolar, vendar Online, Atacado e Varejo. </P>
+            <br>
+            <p>CNPJ: 00.7777.742/07771-00</p>
+            <p>R. 16 QC1 -  Valparaíso / GO</p>
+          </div><!--fim footer-->
+      
+          <div class="footer-col">
+            <h1>Informações</h1> 
+            <ul class="footer-col-links">
+              <li><a href="#">Prazos e entregas</a></li>
+              <li><a href="#">Trabalhe Conosco</a></li>
+              <li><a href="#">Orçamento</a></li>
+              <li><a href="#">Contata Suporte tecnico</a></li>
+            </ul>
+          </div><!--fim footer-->
+          
+          <div class="footer-col">
+            <h1>SOCIAL</h1> 
+            <ul class="footer-col-social">
+              <li><a href="#"><i class="fab fa-twitter"></i>Twitter</a></li>
+              <li><a href="#"><i class="fab fa-facebook-f"></i>Facebook</a></li>
+              <li><a href="#"><i class="fab fa-instagram"></i>Instagram</a></li>
+              
+            </ul>
+          </div><!--fim footer-->
+        </div><!--fim content-->
+      </footer>
+    
+      
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produto</title>
+    <link rel="stylesheet" type="text/css" href="css/fontawesome-all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+<style>
+  .conteudo{
+    display:inline-flex;
+    margin: 30px;
+  }
+  .imgProduto{
+    margin-top:20px;
+    margin-left: 45px;
+    width: 600px;
+    right: 500px;
+  }
+  .venda{
+    width: 600px;
+    right: 400px;
+    left: 120px;
+    padding: 20px;
+  }
+  .venda h1{
+    margin-top: 10px;
+    font-size: 40px;
+    color:#ff5bd6;
+  }
+  .venda p {
+    margin-top: 20px;
+
+  }
+  .preco{
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 30px;
+
+  }
+  .botao{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding: 20px;
+    color:#fff;
+    background: #2EB3DB;
+    font-size: 20px;
+    border:none;
+    width: 120px;
+    align-items: center;
+    cursor: pointer;
+  }
+  .h3{
+    margin-top: 30px;
+    font-size: 20px;
+    color:#ff5bd6;
+  }
+  input[type="number"]{
+  width: 250px;
+  border-radius: 5px;
+  background: #ccc;
+  color:0000;
+  padding: 5px;
+  border: none;
+  margin-top: 10px;
+  }
+  input[type="button"]{
+    margin-bottom: 20px;
+    padding: 5px;
+    color:#fff;
+    background: #2EB3DB;
+    border:none;
+    cursor: pointer;
+  }
+  .descricao{
+    margin:10px;
+    padding: 10px;
+  }
+  .principal{
+    margin: 20px;
+  }
+  .descricao p{
+  padding: 10px;
+  font-size: 18px;
+  color: grey;
+  }
+  .descricao h1{
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 5px;
+    color:#ff5bd6;
+  }
+  hr{
+    color:#2EB3DB;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  @media(max-width: 767.9px){ /*mobile minImo de 768px*/
+    .conteudo{
+      display: block;
+    }
+    .imgProduto{
+      width: 400px;
+   
+      margin-left: 5px;
+    }
+    .imgProduto img{
+      margin-top: 20px;
+    }
+    .principal{
+      margin-left: 0;
+    }
+    .parcelas img{
+      width: 400px;
+    }
+  }
+
+</style>
+</head>
+<body>
+    <header class="header fixed"> <!-----CABEÇALHO----->
+        <div class="content">
+          <div class="logo fl-left">
+            <a href="index.html"><!-----IMAGEM E DESTINO----->
+              <img src="images/logopetit.png" alt="logo" width="120px">
+            </a>
+          <a href="#"class="nav-toggle fl-right">
+            <i class="fas fa-bars"></i> MENU
+          </a>
+          <nav class="nav active"> <!-----AREA DE NAVEGACAO----->
+            <p class="text-right">
+              <span class="nav-close"><!-----ELEMENTO EM LINHA----->
+                <i class="fas fa-times"></i></span>
+            </p>
+            <ul><!-----LISTA NÃO ODENADA----->
+              <li><i class="fas fa-home"></i><a href="#sobre">SOBRE</a></li>
+              <li><i class="fas fa-cart-plus"></i><a href="login.html">CARRINHO</a></li>
+              <li><i class="far fa-user-circle"></i><a href="login.html">MINHA CONTA</a></li>
+            </ul>
+          </nav>
+        </div><!--fim logo-->
+        </div><!--fim content-->
+      </header> <!--FIM DO HEADER-->
+    
+      <!--ESTATISTICA e Busca(SEARCH)-->
+  <section class="section">
+    <div class="search-box">
+      <header>
+        <p class="tagline">PESQUISE PRODUTOS DA LOJA</p>
+      </header>
+      <form name="formSearch" method="post" action=""><!-----FORMULARIO----->
+        <input type="search" name="busca" id="busca">
+        <button type="submit"><i class="fas fa-search"></i></button>
+      </form>
+    </div><!--fim search-->
+    <div class="estatisticas">
+      <div class="estatisticas-item">
+        <span>Cadernos</span>
+      
+      </div><!--fim estatistica item--> 
+      <div class="estatisticas-item">
+        <span>Canetas</span>
+      
+      </div>
+      <div class="estatisticas-item">
+        <span>Planners</span>
+        
+      </div>
+      <div class="estatisticas-item">
+        <span>Marcadores</span>
+       
+      </div>
+      <div class="estatisticas-item">
+        <span>Estojos</span>
+       
+      </div>
+      <div class="estatisticas-item">
+        <span>Réguas</span>
+       
+      </div>
+     </div><!--fim estatistica-->
+
+  </section>
+  <section class="principal">
+  <div class="conteudo">
+    <div class="imgProduto">
+      <img src="images/bloco.jpg" alt="" srcset="" width="500px">
+    </div>
+    <div class="venda">
+      <h1>Bloco de Notas</h1>
+      <p>Código: 9967SE14E30</p>
+      <p class="preco">R$22,00</p>
+      <button class="botao">COMPRAR</button>
+      <hr>
+      <h3 class="h3">CALCULE O FRETE</h3>
+      <input type="number"placeholder="CEP">
+      <input type="button" value="OK">
+    </div>
+    </div><!--conteudo-->
+    <div class="descricao">
+     <h1>Descrição do Produto</h1>
+      <hr>
+      <p>Bloco de notas capa de diversas cores. Surpreenda seus amigos e colegas com muita criatividade no escritório, na faculdade ou na escola. </p>
+      <p><b>Itens Inclusos:</b> 1 Bloco de notas.</p>
+
+       <p><b> Cores disponiveis:</b> Vermelho, rosa, preto, azul.</p>
+        
+        <p> <b>Quantidade de folhas:</b> 200 folhas.</p>
+        
+            <p><b>Material:</b> Papel Couché</p>
+        
+              <p> <b>Dimensões:</b> 60 x 101mm</p>
+    </div><!--descricao-->
+  
+  </section>
+
+  <footer class="footer" id="#sobre">
+    <div class="content">
+      <div class="footer-col">
+        <h1>Sobre a Empresa</h1> 
+        <P>PaperBlue é uma Papelaria Moderna, especializada em materias tecnicos e artisticos, oferecendo ampla linha de escritorio e escolar, vendar Online, Atacado e Varejo. </P>
+        <br>
+        <p>CNPJ: 00.7777.742/07771-00</p>
+        <p>CNJ B -  Valparaíso / GO</p>
+      </div><!--fim footer-->
+  
+      <div class="footer-col">
+        <h1>Informações</h1> 
+        <ul class="footer-col-links">
+          <li><a href="#">Prazos e entregas</a></li>
+          <li><a href="#">Trabalhe Conosco</a></li>
+          <li><a href="#">Orçamento</a></li>
+          <li><a href="#">Contata Suporte tecnico</a></li>
+        </ul>
+      </div><!--fim footer-->
+      
+      <div class="footer-col">
+        <h1>SOCIAL</h1> 
+        <ul class="footer-col-social">
+          <li><a href="#"><i class="fab fa-twitter"></i>Twitter</a></li>
+          <li><a href="#"><i class="fab fa-facebook-f"></i>Facebook</a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i>Instagram</a></li>
+          
+        </ul>
+      </div><!--fim footer-->
+    </div><!--fim content-->
+  </footer>
+
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CADASTRO</title>
+    <link rel="stylesheet" href="css/cadastroLogin.css">
+</head>
+<body>
+    <section class="cadastro">
+    <div class="imgs">
+    <img src="images/oie_transparent.png" alt="" class="avatar">
+    </div>
+</div>
+<form name="form" action="" method="post" class="form">
+<input type="text" placeholder="Nome Completo" name="nome">
+<input type="email" placeholder="E-mail" name="email">
+<input type="text" placeholder="Endereço" name="Endereço">
+<input type="text" placeholder="Cidade" name="Cidade">
+<input type="text" placeholder="Sexo" name="sexo">
+<input type="date" placeholder="Data de nascimento" name="data de nascimento">
+<input type="tel" placeholder="Telefone" name="telefone">
+<input type="password" placeholder="Digite uma senha" name="senha">
+<input type="submit" value="CADASTRE-SE" onclick="verificar()">
+
+</form>
+    </section>
+    <script>
+        function verificar(){
+            if (form.name.value=="" || form.email.value=="" || form.senha.value==""){
+                alert("Preencha todos os campos!")
+                document.form.nome.focus();
+            }else{
+                alert("Usuario cadastrado com Sucesso!")
+                window.location.href="login.html";
+            }
+          
+        }
+    </script>
+</body>
+</html>

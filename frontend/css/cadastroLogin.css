@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #fcc0e0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h3{
+    text-align: center;
+    color: #f72a97;
+    font-weight: normal;
+}
+.conteudo{
+    width: 430px;
+    height: 450px;
+    background: #ffff;
+    margin-left: 33%;
+    margin-right: 33%;
+    margin-top: 6%;
+    padding: 5px;
+}
+.cadastro{
+    width: 430px;
+    height: 610px;
+    background: #ffff;
+    margin-left: 33%;
+    margin-right: 33%;
+    margin-top: 2%;
+    padding: 5px;
+}
+.imgs{
+    margin-top: 20px;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 30%;
+}
+.img{
+margin-top: 5px;
+flex-direction: row;
+align-items: center;
+margin-left: 30%;
+}
+.avatar{
+    width: 120px;
+    height: 120px;
+    margin-left: 25px;
+}
+.logo{
+    width: 120px;
+}
+form{
+    display: inline-block;
+    width: 290px;
+    height: 120px;
+    padding: 10px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.form{
+    display: inline-block;
+    width: 290px;
+    height: 120px;
+    padding: 1px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+input[type="text"], input[type="email"], input[type="password"]{
+    padding: 5px;
+    width: 250px;
+    margin: 10px;
+    border:none;
+    border-bottom: 1px solid #fa9ecf;
+ 
+}
+input[type="date"], input[type="tel"]{
+    padding: 5px;
+    width: 250px;
+    margin: 10px;
+    border:none;
+    border-bottom: 1px solid #fa9ecf;
+
+}
+input[type="submit"]{
+    padding: 15px;
+    color: #ffff;
+    border: none;
+    background: #f72a97;
+    margin: 10px;
+    margin-left: 32%;
+    margin-right: 32%;
+    cursor: pointer;
+}
+input[type="submit"]:hover{
+    background: #fa9ecf;
+
+}
+form p{
+margin-top: 10px;
+margin-left: 20px;
+}
+@media(max-width: 600.9px){ /*mobile minImo de 768px*/
+    *{margin: 0;
+        padding: 0;
+    }
+    .conteudo{
+    width: 420px;
+    height: 450px;
+    background: #ffff;
+    margin-top: 20%;
+    padding: 5px;
+    margin-left: 35px;
+
+    }
+    .cadastro{
+        width: 430px;
+        height: 610px;
+        background: #ffff;
+        margin-left: 7%;
+        margin-top: 2%;
+        padding: 5px;
+    }
+    
+}
